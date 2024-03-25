@@ -1,0 +1,26 @@
+div.cart_container h3 {
+  font-size: 1.8rem;
+  width: max-content;
+  text-align: center;
+  margin-inline: auto;
+  text-transform: uppercase;
+  font-family: var(--ff-accent);
+  border-image: rgb(255, 255, 255);
+  padding-inline: var(--pd-cart-title);
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #ffffff, #fff8eb, #ffffff);
+  border-image-slice: 1;
+}
+div.cart {
+  margin-top: 5px;
+  background-color: var(--clr-base);
+  padding-block: calc(var(--pd-base) * 3);
+}
+section.cart_items {
+  gap: 3em 4em;
+  display: grid;
+  margin-inline: auto;
+  max-width: var(--wd-base);
+  padding-inline: var(--pd-base);
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}

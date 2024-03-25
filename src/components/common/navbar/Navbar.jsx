@@ -1,17 +1,17 @@
 import React, { useRef, useState } from 'react'
 import styles from './navbar.module.css'
-import logo from '../../assests/logo.png'
-import login from '../../assests/login.svg'
-import logout from '../../assests/logout.svg'
-import profile from '../../assests/profile.png'
-import basket from '../../assests/basket.png'
-import burgerMenu from '../../assests/burger.png'
-import menuClose from '../../assests/menu_close.png'
+import logo from '../../../assests/logo.png'
+import login from '../../../assests/login.svg'
+import logout from '../../../assests/logout.svg'
+import profile from '../../../assests/profile.png'
+import basket from '../../../assests/basket.png'
+import burgerMenu from '../../../assests/burger.png'
+import menuClose from '../../../assests/menu_close.png'
 
 import {
   useAddProductMutation,
   useGetProductsQuery,
-} from '../../features/products/productsApi'
+} from '../../../features/products/productsApi'
 
 export const Navbar = () => {
   const [show, setShow] = useState(false)
