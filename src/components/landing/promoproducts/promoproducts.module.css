@@ -6,6 +6,7 @@ div.cart_container h3 {
   text-transform: uppercase;
   font-family: var(--ff-accent);
   border-image: rgb(255, 255, 255);
+  padding-top: 25px;
   padding-inline: var(--pd-cart-title);
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(to right, #ffffff, #fff8eb, #ffffff);
