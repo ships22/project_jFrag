@@ -1,0 +1,40 @@
+div.promo_item {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 9%,
+    rgba(255, 248, 235, 1) 40%
+  );
+  width: 400px;
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+section.decription {
+  border: 1px solid black;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+}
+section.decription h4 {
+  background-color: red;
+  font-family: var(--ff-accent);
+  text-transform: uppercase;
+  position: relative;
+  padding-inline: 20px;
+}
+section.decription h4::after {
+  content: '';
+  width: 5px;
+  height: calc(100% - 10px);
+  background-color: black;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+section.decription p {
+  padding-inline: 5px;
+}

@@ -5,7 +5,7 @@ import desert from '../../../assests/newProducts/desert_night_1.png'
 import lilium from '../../../assests/newProducts/lilium_sweet_sand_1.png'
 import nuit from '../../../assests/newProducts/nuit_de_noel_1.png'
 import styles from './promoproducts.module.css'
-const newProducts = [
+const products = [
   {
     id: 1,
     name: 'Dramatic desert',
@@ -13,6 +13,7 @@ const newProducts = [
     category: 'Unisex',
     size: '100ml',
     price: 59,
+    reduction: 25,
     photo: dramatic,
   },
   {
@@ -22,6 +23,7 @@ const newProducts = [
     category: 'Unisex',
     size: '100ml',
     price: 65,
+    reduction: 30,
     photo: desert,
   },
   {
@@ -31,6 +33,7 @@ const newProducts = [
     category: 'Unisex',
     size: '100ml',
     price: 79,
+    reduction: 25,
     photo: lilium,
   },
   {
@@ -40,19 +43,20 @@ const newProducts = [
     category: 'Unisex',
     size: '100ml',
     price: 65,
+    reduction: 25,
     photo: nuit,
   },
 ]
 export const PromoProducts = () => {
   return (
-    <div className={styles.cart_container}>
+    <div className={styles.promo_cart_container}>
       <h3>en promotion</h3>
-      <div className={styles.cart}>
-        <section className={styles.cart_items}>
-          <PromoProduct product={newProducts[0]} />
-          <PromoProduct product={newProducts[1]} />
-          <PromoProduct product={newProducts[2]} />
-          <PromoProduct product={newProducts[3]} />
+      <div className={styles.promo_cart}>
+        <section className={styles.promo_cart_items}>
+          <PromoProduct product={products[0]} />
+          {/* <PromoProduct product={products[1]} />
+          <PromoProduct product={products[2]} />
+          <PromoProduct product={products[3]} /> */}
         </section>
       </div>
     </div>

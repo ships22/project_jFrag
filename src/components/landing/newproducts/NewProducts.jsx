@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './newproducts.module.css'
-import { NewProduct } from '../newproduct/NewProduct'
 import dramatic from '../../../assests/newProducts/dramatic_desert_1.png'
 import desert from '../../../assests/newProducts/desert_night_1.png'
 import lilium from '../../../assests/newProducts/lilium_sweet_sand_1.png'
 import nuit from '../../../assests/newProducts/nuit_de_noel_1.png'
+import { NewProduct } from './newproduct/NewProduct'
 
-const newProducts = [
+const products = [
   {
     id: 1,
     name: 'Dramatic desert',
@@ -47,14 +47,14 @@ const newProducts = [
 
 export const NewProducts = () => {
   return (
-    <div className={styles.cart_container}>
+    <div className={styles.new_cart_container}>
       <h3>nouveautés</h3>
-      <div className={styles.cart}>
-        <section className={styles.cart_items}>
-          <NewProduct product={newProducts[0]} />
-          <NewProduct product={newProducts[1]} />
-          <NewProduct product={newProducts[2]} />
-          <NewProduct product={newProducts[3]} />
+      <div className={styles.new_cart}>
+        <section className={styles.new_cart_items}>
+          <NewProduct product={products[0]} />
+          <NewProduct product={products[1]} />
+          <NewProduct product={products[2]} />
+          <NewProduct product={products[3]} />
         </section>
       </div>
     </div>
