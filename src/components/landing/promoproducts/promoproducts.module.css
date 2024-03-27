@@ -14,15 +14,15 @@ div.promo_cart_container h3 {
 }
 div.promo_cart {
   margin-top: 5px;
-  padding-block: calc(var(--pd-base) * 3);
+  padding-block: calc(var(--pd-base) * 2);
 }
 section.promo_cart_items {
   display: flex;
-  gap: 5em;
+  gap: 1.5em;
   flex-wrap: wrap;
   margin-inline: auto;
   max-width: var(--wd-base);
-  justify-content: center;
+  justify-content: space-between;
   padding-inline: var(--pd-base);
 }
 

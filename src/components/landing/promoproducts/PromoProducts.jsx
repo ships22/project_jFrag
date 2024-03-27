@@ -54,9 +54,13 @@ export const PromoProducts = () => {
       <div className={styles.promo_cart}>
         <section className={styles.promo_cart_items}>
           <PromoProduct product={products[0]} />
-          {/* <PromoProduct product={products[1]} />
+          <PromoProduct product={products[1]} />
           <PromoProduct product={products[2]} />
-          <PromoProduct product={products[3]} /> */}
+          <PromoProduct product={products[3]} />
+          <PromoProduct product={products[0]} />
+          <PromoProduct product={products[1]} />
+          <PromoProduct product={products[2]} />
+          <PromoProduct product={products[3]} />
         </section>
       </div>
     </div>
