@@ -62,6 +62,9 @@ export const PromoProducts = () => {
           <PromoProduct product={products[2]} />
           <PromoProduct product={products[3]} />
         </section>
+        <div className={styles.link_more}>
+          <a href='google.com'>Et encore plus...</a>
+        </div>
       </div>
     </div>
   )
