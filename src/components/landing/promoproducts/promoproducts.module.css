@@ -70,6 +70,7 @@ section.promo_cart_items > *:last-child::after {
   font-size: var(--fs-x-large);
   font-weight: var(--fw-normal);
   color: var(--clr-red-hightlight-light);
+  color: var(--clr-yellow-hightlight);
 }
 .link_more a:hover {
   cursor: pointer;
@@ -99,8 +100,13 @@ section.promo_cart_items > *:last-child::after {
 }
 @media screen and (max-width: 620px) {
   div.promo_cart_container h3 {
+    margin-top: 20px;
     font-size: 1.5rem;
-    padding-inline: 5em;
+    padding-inline: calc(var(--pd-cart-title) / 3);
+  }
+  div.promo_cart {
+    margin-top: 5px;
+    padding-top: calc(var(--pd-base));
   }
   section.promo_cart_items > *:first-child::before {
     font-size: var(--fs-medium);
