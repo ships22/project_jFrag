@@ -1,0 +1,56 @@
+div.trend_cart_container {
+  background: rgb(255, 248, 235);
+  background: radial-gradient(at center, #ffffff, #fff8eb);
+}
+div.trend_cart {
+  margin-inline: auto;
+  max-width: var(--wd-base);
+  padding: 0 var(--pd-base) var(--pd-base);
+  display: grid;
+  gap: 1em;
+  grid-template-rows: 200px 150px 200px;
+  grid-template-areas:
+    'ltr_a        top_midle       top_right'
+    'bottom_left  ltr_la          top_right'
+    'bottom_left  bottom_midle    ltr_mode';
+}
+div.trend_cart > p {
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+div.trend_cart p.ltr_a {
+  grid-area: ltr_a;
+}
+div.trend_cart p.ltr_la {
+  grid-area: ltr_la;
+  text-align: center;
+}
+div.trend_cart p.ltr_mode {
+  grid-area: ltr_mode;
+  text-align: right;
+  line-height: 200px;
+}
+div.trend_cart section.top_midle {
+  grid-area: top_midle;
+}
+div.trend_cart section.top_right img,
+div.trend_cart section.bottom_left img {
+  max-width: 220px;
+  max-height: 296px;
+  padding-bottom: 20px;
+}
+div.trend_cart section.top_midle img,
+div.trend_cart section.bottom_midle img {
+  max-width: 120px;
+  max-height: 140px;
+  padding-bottom: 20px;
+}
+div.trend_cart section.top_right {
+  grid-area: top_right;
+}
+div.trend_cart section.bottom_left {
+  grid-area: bottom_left;
+}
+div.trend_cart section.bottom_midle {
+  grid-area: bottom_midle;
+}

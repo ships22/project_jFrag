@@ -61,7 +61,7 @@ section.promo_cart_items > *:last-child::after {
   text-align: right;
   max-width: 1440px;
   margin-inline: auto;
-  padding: var(--pd-base);
+  padding: calc(var(--pd-base) * 1.5) var(--pd-base);
 }
 .link_more a {
   margin-left: auto;
@@ -69,7 +69,6 @@ section.promo_cart_items > *:last-child::after {
   max-width: max-content;
   font-size: var(--fs-x-large);
   font-weight: var(--fw-normal);
-  color: var(--clr-red-hightlight-light);
   color: var(--clr-yellow-hightlight);
 }
 .link_more a:hover {

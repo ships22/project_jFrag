@@ -1,0 +1,54 @@
+figure.trend_item {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 9%,
+    rgba(255, 248, 235, 1) 40%
+  );
+  position: relative;
+  transition: all 400ms;
+}
+figure.trend_item:hover {
+  scale: 1.1;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+figure.trend_item figcaption {
+  display: flex;
+}
+figure.trend_item figcaption h4 {
+  font-size: var(--fs-normal);
+  font-family: var(--ff-accent);
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 var(--pd-base) 0 var(--pd-base--half);
+  line-height: 40px;
+}
+figure.trend_item figcaption h4::after {
+  top: 5px;
+  right: 0;
+  width: 5px;
+  content: '';
+  position: absolute;
+  height: calc(100% - 10px);
+  background-color: black;
+}
+figure.trend_item figcaption section {
+  padding-left: var(--pd-base--half);
+}
+figure.trend_item > section {
+  text-align: center;
+}
+figure.trend_item img {
+  object-fit: contain;
+  /* margin-block: 1.5em; */
+}
+figure.trend_item > h5 {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding-inline: calc(var(--pd-base) + 1em);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
