@@ -18,7 +18,7 @@ figure.trend_item figcaption {
   display: flex;
 }
 figure.trend_item figcaption h4 {
-  font-size: var(--fs-normal);
+  font-size: var(--fs-medium);
   font-family: var(--ff-accent);
   text-transform: uppercase;
   position: relative;
@@ -37,18 +37,32 @@ figure.trend_item figcaption h4::after {
 figure.trend_item figcaption section {
   padding-left: var(--pd-base--half);
 }
+figure.trend_item figcaption section p {
+  font-size: var(--fs-medium);
+}
 figure.trend_item > section {
   text-align: center;
 }
 figure.trend_item img {
   object-fit: contain;
-  /* margin-block: 1.5em; */
 }
 figure.trend_item > h5 {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
-  padding-inline: calc(var(--pd-base) + 1em);
-  position: absolute;
   right: 0;
   bottom: 0;
+  position: absolute;
+  color: var(--clr-white);
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-light);
+  background-color: var(--clr-black);
+  padding-inline: calc(var(--pd-base) + 1em);
+}
+
+/* ********************************* */
+/* *********media queries*********** */
+/* ********************************* */
+
+@media screen and (max-width: 820px) {
+  figure.trend_item figcaption section p {
+    font-size: var(--fs-small);
+  }
 }

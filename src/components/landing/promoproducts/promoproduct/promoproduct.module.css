@@ -91,6 +91,10 @@ figure.promo_item figcaption span:nth-child(3)::before {
   background-color: var(--clr-white);
 }
 
+/* ********************************* */
+/* *********media queries*********** */
+/* ********************************* */
+
 @media screen and (max-width: 1400px) {
   figure.promo_item {
     width: 240px;
